@@ -1,42 +1,60 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-  xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
-  <modelVersion>4.0.0</modelVersion>
-  <parent>
-    <artifactId>neoclipse</artifactId>
-    <groupId>org.neo4j</groupId>
-    <version>1.6</version>
-  </parent>
-  <groupId>org.neo4j</groupId>
-  <artifactId>org.neo4j.neoclipse</artifactId>
-  <version>1.6</version>
-  <name>Neoclipse</name>
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<parent>
+		<artifactId>neoclipse</artifactId>
+		<groupId>org.neo4j</groupId>
+		<version>1.7</version>
+	</parent>
+	<groupId>org.neo4j</groupId>
+	<artifactId>org.neo4j.neoclipse</artifactId>
+	<version>1.7</version>
+	<name>Neoclipse</name>
 
-  <properties>
-    <license-text.header>ApacheLicense-2.0-header.txt</license-text.header>
-  </properties>
+	<properties>
+		<license-text.header>ApacheLicense-2.0-header.txt</license-text.header>
+	</properties>
 
-  <dependencies>
-    <dependency>
-      <groupId>junit</groupId>
-      <artifactId>junit</artifactId>
-    </dependency>
-    <dependency>
-      <groupId>org.neo4j</groupId>
-      <artifactId>neo4j</artifactId>
-      <version>1.6.M03</version>
-      <type>pom</type>
-      <scope>compile</scope>
-    </dependency>
-  </dependencies>
-  <build>
-    <resources>
-      <resource>
-        <directory>${basedir}</directory>
-        <includes>
-          <include>plugin.xml</include>
-        </includes>
-      </resource>
-    </resources>
-  </build>
+	<dependencies>
+		<dependency>
+			<groupId>junit</groupId>
+			<artifactId>junit</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>org.neo4j</groupId>
+			<artifactId>neo4j</artifactId>
+			<version>1.7</version>
+			<type>pom</type>
+			<scope>compile</scope>
+		</dependency>
+		<dependency>
+			<groupId>dom4j</groupId>
+			<artifactId>dom4j</artifactId>
+			<version>1.6.1</version>
+		</dependency>
+		<dependency>
+			<groupId>com.google.code.gson</groupId>
+			<artifactId>gson</artifactId>
+			<version>2.2.1</version>
+		</dependency>
+		<dependency>
+			<groupId>org.json</groupId>
+			<artifactId>json</artifactId>
+			<version>20090211</version>
+		</dependency>
+	
+	<!-- DEPENDENCY FOR java-rest-binding is missing in the artifacts -->
+
+	</dependencies>
+	<build>
+		<resources>
+			<resource>
+				<directory>${basedir}</directory>
+				<includes>
+					<include>plugin.xml</include>
+				</includes>
+			</resource>
+		</resources>
+	</build>
 </project>

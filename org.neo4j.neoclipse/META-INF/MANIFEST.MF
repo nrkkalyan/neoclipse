@@ -2,7 +2,7 @@ Manifest-Version: 1.0
 Bundle-ManifestVersion: 2
 Bundle-Name: Neoclipse
 Bundle-SymbolicName: org.neo4j.neoclipse;singleton:=true
-Bundle-Version: 1.7
+Bundle-Version: 1.6
 Bundle-Activator: org.neo4j.neoclipse.Activator
 Bundle-Vendor: Neo4j.org
 Bundle-ActivationPolicy: lazy
@@ -12,6 +12,7 @@ Bundle-ClassPath: .,
  lib/dom4j.jar,
  lib/scala-library-2.9.0-1.jar,
  lib/lucene-core-3.5.0.jar,
+ lib/gson-2.1.jar,
  lib/json.jar,
  lib/neo4j-cypher-1.7.jar,
  lib/neo4j-graph-algo-1.7.jar,
@@ -24,8 +25,7 @@ Bundle-ClassPath: .,
  lib/jersey-core-1.9.jar,
  lib/jackson-core-asl-1.9.1.jar,
  lib/jackson-mapper-asl-1.9.1.jar,
- lib/neo4j-rest-graphdb-1.7-SNAPSHOT.jar,
- lib/gson-2.2.1.jar
+ lib/neo4j-rest-graphdb-1.7-SNAPSHOT.jar
 Import-Package: org.eclipse.core.commands.common,
  org.eclipse.core.runtime,
  org.eclipse.core.runtime.preferences,

@@ -90,7 +90,7 @@ public class ApplicationUtil
             {
                 RelationshipWrapper rw = new RelationshipWrapper( relationship.getId() );
                 relationship.getType().name();
-                rw.setEndNodeId( relationship.getEndNode().getId()  );
+                rw.setEndNode( extractToNodeWrapper( relationship.getEndNode(), false ) );
                 rw.setPropertyMap( extractToMapFromProperties( relationship ) );
                 rw.setRelationshipType( relationship.getType().name() );
                 nodeWrapper.addRelation( rw );

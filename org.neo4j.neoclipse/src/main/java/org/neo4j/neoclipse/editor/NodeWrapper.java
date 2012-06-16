@@ -1,7 +1,7 @@
 package org.neo4j.neoclipse.editor;
 
-import java.util.ArrayList;
-import java.util.List;
+import java.util.HashSet;
+import java.util.Set;
 
 import org.neo4j.neoclipse.util.ApplicationUtil;
 
@@ -9,30 +9,18 @@ public class NodeWrapper extends BaseWrapper
 {
 
     private static final long serialVersionUID = 1L;
-
-
-    private List<RelationshipWrapper> relation = new ArrayList<RelationshipWrapper>();
-
-    public NodeWrapper()
-    {
-    }
-
+    private Set<RelationshipWrapper> relation = new HashSet<RelationshipWrapper>();
 
     public NodeWrapper( long id )
     {
         super( id );
     }
 
-    public List<RelationshipWrapper> getRelation()
+    public Set<RelationshipWrapper> getRelations()
     {
         return relation;
     }
 
-
-    public void setRelation( List<RelationshipWrapper> relation )
-    {
-        this.relation = relation;
-    }
 
     public void addRelation( RelationshipWrapper relation )
     {

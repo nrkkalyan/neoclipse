@@ -31,7 +31,7 @@ public abstract class BaseWrapper implements Serializable
         this.propertyMap = propertyMap;
     }
 
-    public Long getId()
+    public long getId()
     {
         return id;
     }

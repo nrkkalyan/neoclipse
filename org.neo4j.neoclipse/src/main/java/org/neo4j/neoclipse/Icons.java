@@ -155,7 +155,7 @@ public enum Icons
     JSON( "json", path( "enabled/json.gif" ) ),
     XML( "xml", path( "enabled/xml.gif" ) ),
     EXECUTE_SQL( "executesql", path( "enabled/execute.gif" ) ),
-
+    GENERATE_ENTITY( "generateentity", path( "enabled/entity.gif" ) ),
     ;
 
     private static final String ICON_LOCATION = "icons/";

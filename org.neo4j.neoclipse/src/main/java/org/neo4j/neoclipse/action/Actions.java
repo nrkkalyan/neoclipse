@@ -125,7 +125,8 @@ public enum Actions
     NEW_CYPHER_EDITOR( "New Cypher Editor", Icons.CYPHER_EDITOR_ENABLED, Icons.CYPHER_EDITOR_DISABLED ),
     FORCE_START( "Close other connection and start", Icons.FORCE_START_ENABLED, Icons.FORCE_START_DISABLED ),
     EXPORT_XML( "ExportToXml", Icons.XML, Icons.XML ),
-    EXPORT_JSON( "ExportToJson", Icons.JSON, Icons.JSON ), ;
+    EXPORT_JSON( "ExportToJson", Icons.JSON, Icons.JSON ),
+    GENERATE_ENTITY( "GenerateEntity", Icons.GENERATE_ENTITY, Icons.GENERATE_ENTITY ), ;
 
     private final String label;
     private final String tooltip;

@@ -31,6 +31,7 @@ import org.neo4j.neoclipse.connection.actions.ExportToJsonAction;
 import org.neo4j.neoclipse.connection.actions.ExportToXmlAction;
 import org.neo4j.neoclipse.connection.actions.ForceStartAction;
 import org.neo4j.neoclipse.connection.actions.NewAliasAction;
+import org.neo4j.neoclipse.entitygen.GenerateEntityAction;
 import org.neo4j.neoclipse.graphdb.GraphDbServiceManager;
 import org.neo4j.neoclipse.view.NeoGraphViewPart;
 
@@ -68,6 +69,7 @@ public class ConnectionTreeActionGroup extends ActionGroup
             addAction( menu, new StopAction( neoGraphView ) );
             addAction( menu, new ExportToXmlAction() );
             addAction( menu, new ExportToJsonAction() );
+            addAction( menu, new GenerateEntityAction() );
 
         }
         else

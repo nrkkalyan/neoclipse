@@ -6,27 +6,22 @@ public class RelationshipWrapper extends BaseWrapper
 {
 
     private static final long serialVersionUID = 1L;
-    private long endNodeId;
+    private NodeWrapper endNode;
     private String relationshipType;
-
-    public RelationshipWrapper()
-    {
-    }
 
     public RelationshipWrapper( long id )
     {
         super( id );
     }
 
-
-    public long getEndNodeId()
+    public NodeWrapper getEndNode()
     {
-        return endNodeId;
+        return endNode;
     }
 
-    public void setEndNodeId( long endNode )
+    public void setEndNode( NodeWrapper endNode )
     {
-        this.endNodeId = endNode;
+        this.endNode = endNode;
     }
 
     public String getRelationshipType()
@@ -38,8 +33,5 @@ public class RelationshipWrapper extends BaseWrapper
     {
         this.relationshipType = relationshipType;
     }
-
-
-
 
 }
